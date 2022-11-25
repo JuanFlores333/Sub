@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             BackgroundColor="White"
+             x:Class="Sub.MainPage">
+
+    <ContentView>
+        <Grid RowDefinitions="20*,10*, 50*,5*, 7*, 10*"
+              ColumnDefinitions="10*, 80*, 10*">
+            <Label Text="Sus datos"
+                   TextColor="Black"
+                   FontSize="Title"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Grid.Row="1"
+                   Grid.Column="1"
+                   HorizontalTextAlignment="Center"></Label>
+            <ContentView Grid.Column="1"
+                         Grid.Row="2">
+                <StackLayout>
+                    <Label Text="Nombre"
+                           TextColor="Black"
+                           FontSize="Large"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center"></Label>
+                    <Entry Text="{Binding Nombre}"
+                           Placeholder="Nombre"
+                           x:Name="Nombre"
+                           FontSize="Large"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center"></Entry>
+                    <Label Text="ApellidoP"
+                           TextColor="Black"
+                           FontSize="Large"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center"></Label>
+                    <Entry Text="{Binding ApellidoP}"
+                           Placeholder="Apellido Paterno"
+                           x:Name="Apellido_Paterno"
+                           FontSize="Large"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center"></Entry>
+                    <Label Text="ApellidoM"
+                           TextColor="Black"
+                           FontSize="Large"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center"></Label>
+                    <Entry Text="{Binding ApellidoM}"
+                           Placeholder="Apellido Materno"
+                           x:Name ="Apellido_Materno"
+                           FontSize="Large"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center"></Entry>
+                    <Label Text="Numero"
+                           TextColor="Black"
+                           FontSize="Large"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center"></Label>
+                    <Entry Text="{Binding Numero}"
+                           Placeholder="Numero"
+                           x:Name="Numero"
+                           FontSize="Large"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center"
+                           HorizontalTextAlignment="Center"></Entry>
+                </StackLayout>
+            </ContentView>
+        </Grid>
+    </ContentView>
+
+</ContentPage>
